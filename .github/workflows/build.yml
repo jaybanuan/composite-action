@@ -4,11 +4,11 @@ on:
     inputs:
       SHAPE:
         required: true
-        default: '["circle", "triangle", "rectangle"]'
+        default: '["circle", "rectangle"]'
 
       COLOR:
         required: true
-        default: '["red", "green", "blue"]'
+        default: '["blue", "green"]'
         
 jobs:
   build:
@@ -32,7 +32,6 @@ jobs:
         run: |
           cat output.txt
           echo "job=${{ github.job }}"
-          echo "job=${GITHUB_JOB}"
 
   postprocess:
     name: Postprocess
@@ -43,4 +42,3 @@ jobs:
         run: |
           echo "Completed"
           echo "job=${{ github.job }}"
-          echo "job=${GITHUB_JOB}"
