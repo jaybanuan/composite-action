@@ -31,7 +31,8 @@ jobs:
       - name: Show result
         run: |
           cat output.txt
-          echo "job=${{env.GITHUB_JOB}}"
+          echo "job=${{ github.job }}"
+          echo "job=${{ GITHUB_JOB }}"
 
   postprocess:
     name: Postprocess
@@ -41,3 +42,5 @@ jobs:
       - name: Show message
         run: |
           echo "Completed"
+          echo "job=${{ github.job }}"
+          echo "job=${{ GITHUB_JOB }}"
