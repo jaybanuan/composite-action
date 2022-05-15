@@ -4,11 +4,11 @@ on:
     inputs:
       SHAPE:
         required: true
-        default: '["circle, triangle", "rectangle"]'
+        default: '["circle", "triangle", "rectangle"]'
 
       COLOR:
         required: true
-        default: '["red, green, blue"]'
+        default: '["red", "green", "blue"]'
         
 jobs:
   build:
