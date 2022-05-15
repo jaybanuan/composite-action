@@ -13,5 +13,4 @@ runs:
     - name: Echo shape and color
       shell: bash
       run: |
-        echo "hello"
-#        echo "shape=${{ github.event.inputs.SHAPE }}, color=${{ github.event.inputs.COLOR }}" | tee output.txt
+        echo "shape=${{ github.event.inputs.SHAPE }}, color=${{ github.event.inputs.COLOR }}" | tee -a output.txt
