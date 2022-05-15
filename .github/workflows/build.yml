@@ -9,7 +9,7 @@ on:
       COLOR:
         required: true
         default: '["blue", "green"]'
-        
+
 jobs:
   build:
     name: Build
