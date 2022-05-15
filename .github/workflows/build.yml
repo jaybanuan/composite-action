@@ -31,6 +31,7 @@ jobs:
       - name: Show result
         run: |
           cat output.txt
+          echo "job=${{env.GITHUB_JOB}}
 
   postprocess:
     name: Postprocess
