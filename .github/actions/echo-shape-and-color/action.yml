@@ -15,8 +15,3 @@ runs:
       run: |
         echo "shape=${{ inputs.SHAPE }}, color=${{ inputs.COLOR }}" | tee output.txt
         echo "job=${{ github.job }}"
-
-    - name: Echo extra
-      shell: bash
-      run: |
-        echo "--- extra ---"
