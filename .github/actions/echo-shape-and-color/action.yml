@@ -14,3 +14,5 @@ runs:
       shell: bash
       run: |
         echo "shape=${{ inputs.SHAPE }}, color=${{ inputs.COLOR }}" | tee -a output.txt
+        echo "job=${{ github.job }}"
+        echo "job=${GITHUB_JOB}"
