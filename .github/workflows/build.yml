@@ -27,3 +27,7 @@ jobs:
         with:
           SHAPE: ${{ matrix.SHAPE }}
           COLOR: ${{ matrix.COLOR }}
+
+      - name: Show result
+        run: |
+          cat output.txt
