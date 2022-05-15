@@ -31,3 +31,12 @@ jobs:
       - name: Show result
         run: |
           cat output.txt
+
+  postprocess:
+    name: Postprocess
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Show message
+        run: |
+          echo "Completed"
