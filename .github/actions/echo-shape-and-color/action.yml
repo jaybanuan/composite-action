@@ -1,0 +1,15 @@
+name: Echo shape and color
+
+inputs:
+  SHAPE:
+    required: true
+
+  COLOR:
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Echo shape and color
+      run: |
+        echo "shape=${{ github.event.inputs.SHAPE }}, color=${{ github.event.inputs.COLOR }}" | tee output.txt
