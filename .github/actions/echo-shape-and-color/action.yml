@@ -19,4 +19,4 @@ runs:
     - name: Echo extra
       shell: bash
       run: |
-        echo "EXTRAAA”
+        echo "--- extra ---"
