@@ -22,8 +22,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-#      - name: Echo shape and color
-#        uses: ./.github/actions/echo-shape-and-color
-#        with:
-#          SHAPE: ${{ matrix.SHAPE }}
-#          COLOR: ${{ matrix.COLOR }}
+      - name: Echo shape and color
+        uses: ./.github/actions/echo-shape-and-color
+        with:
+          SHAPE: ${{ matrix.SHAPE }}
+          COLOR: ${{ matrix.COLOR }}
